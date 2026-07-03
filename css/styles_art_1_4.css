@@ -1,0 +1,198 @@
+body {
+    margin: 0;
+    background-image: 
+      url('../Images/art_1_4/art_1_4_bg.jpg');
+    background-repeat: no-repeat;
+    background-size: min(600vw, 660px) auto;
+    background-position: top center;
+    background-color: #000000;
+    padding-bottom: 0px;
+}
+.page_art_1_4{
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: 1fr auto;
+    margin: 0;
+}
+.art-container{    
+  max-width: var(--container-max);
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 0px;
+  box-sizing: border-box;
+}
+.container{
+    position: relative; 
+    margin-top: 60px;
+}
+.art-title{ 
+    position: relative; 
+    height: 60px; 
+    padding: 0px;
+}
+.art-title-text-image{
+    position: relative; 
+    display: flex;
+    width: 110px;
+    margin: 30px auto;
+}
+.art-title-text{
+    position: relative; z-index: 1;
+    height: 100%;
+    font-size: 0.7rem;
+    font-weight: 400;
+    display: grid; place-items: center;
+    text-align: center; color: #ffffff; padding: 0px;
+}
+.art-image{
+    position: relative; 
+    display: flex;
+    margin: 25px auto;
+}
+.art-image-img{
+    width: 276px;
+    height: auto;
+    display: flex;
+    object-fit: cover;
+    justify-content: center; /* 수평 가운데 */
+    margin: 0 auto;
+}
+@media (min-width: 768px) {
+  .art-image-img {
+    max-width: var(--container-max); 
+    margin: 0 auto;                  /* 가운데 정렬 */
+  }
+}
+.art-link {
+    width: 100%;
+    margin-top: 0px;
+}
+.art-link-btn{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 153px;
+    height: 31px;
+    /*padding: 16px 18px;*/
+    
+    text-decoration: none;
+    color: #111;
+    object-fit: cover;
+
+    background-image: var(--bg);
+    background-position: center;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    /*overflow: hidden;*/
+    isolation: isolate;
+    box-shadow: 0 1px 2px rgba(0,0,0,.06);
+    transition: transform .15s ease, box-shadow .15s ease;
+    margin: -10px auto;    
+}
+/* 텍스트 */
+.art-link-btn-text{
+    position: relative;
+    color: #fff;
+  font-weight: 400;
+  font-size: 0.4rem;
+    text-align: center;
+  /* line-height: 1.2; */
+  margin-top: 0px;
+}
+
+/* 작가명, 제목 */
+/* .artist-introduce{ 
+    position: relative; 
+    padding: 0px;
+    margin-top: 50px;
+}
+.artist-introduce-text{
+    position: relative;
+    inset: 0;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    color: #000000;   
+    z-index: 2;       
+    margin: 0 auto;
+}
+.artist-introduce-text h1{
+    margin: 0 auto;
+    color: #fff;
+}
+.artise_name {
+    font-size: 1.0rem;
+}
+.art_title {
+    font-size: 1.5rem;
+} */
+ .art-name{
+    position: relative; 
+    padding: 0px;
+    margin-top: 50px;
+ }
+.art-name-text-image{
+    position: relative; 
+    display: flex;
+    width: 198px;
+    margin: 30px auto;
+}
+/* 작품 설명 */
+
+/* .art-explain{ 
+    position: relative; 
+    padding: 30px;
+} */
+
+/* .art-explain-text-bg{
+    position: relative; 
+    width: 345px;
+    height: 100px; 
+    margin: -15px auto;
+    display: flex;
+    flex-direction: column;
+    background-image: url('../Images/art_1_4/art_1_4_explain_bg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 345px 100px;
+    z-index: 0;
+} */
+
+.art-explain-text-image {
+    display: flex;
+    margin: 25px auto;
+    width: 315px;
+    z-index: 2;
+}
+
+.art-explain{
+    margin-top: -20px;
+}
+/* .art-explain-img{
+    display: block;
+    width: min(100%, var(--container-max, 660px));
+    height: 500px;
+    margin: 0 auto;
+}
+.art-explain-text{
+    position: static;
+    display: block;
+    text-align: left;
+    color: #fff;          
+    z-index: 2;     
+    
+    max-width: min(100%, var(--container-max, 660px));
+    margin: 0 auto;  
+}
+.art-explain-text h1{
+    font-size: 1.0rem;
+    font-weight: 300;
+} */
+.page-bottom{ 
+    margin-top: 120px;
+    margin-bottom: 15px;
+}

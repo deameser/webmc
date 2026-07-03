@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Atelier Nodeul</title>
+    <meta property="og:description" content="아뜰리에 노들을 한강대교 하단부에서 진행하는 미디어파사드 전시를 의미합니다. 노들섬 남단 교각 하부에 미디어 파사드 작품을 전시하여 시민의 문화예술 향유의 경험을 확대하고, 노들섬을 문화예술•관광의 관문 역할이자 미디어아트 랜드마크를 조성하는 것에 목적을 두고 있습니다." />
+    <meta property="og:image" content="https://deameser.github.io/Images/common/atelier_nodeul_logo.png" />
+    
+
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/styles_page.css" />
+    <link rel="stylesheet" href="./css/styles_art_1_3.css" />
+    <link rel="stylesheet" href="./css/styles_art.css" />
+
+    <style>
+        .audio-player{
+            display: grid;
+            grid-template-columns: auto 1fr auto auto;
+            gap : 10px;
+            align-items: center;
+            padding: 10px 12px;
+            border: 1px solid #e5e7eb;
+            border-radius: 12px;
+            background: #fff;
+            box-shadow: 0 4px 14px rgba(0,0,0,.06);
+            max-width: 720px;
+        }
+    </style>
+</head>
+<body>
+    <!-- ================= NAV ================= -->
+    <header class="nav" id="top">
+        <section class="main-title" id="main-title">
+            <div class="main-title-overlays">
+                <div class="main-title-overlay-left">
+                        <!--style="--bg: url('Images/index_button.png'); --accent: #ffffff;"-->
+                    <button class="main-title-back-btn" onclick="goBack()"
+                        aria-label="">
+                        <img
+                            class="main-title-back-button-img"
+                            src="./Images/common/button_back_icon.png"
+                            alt=""
+                        />
+                        <img
+                            class="main-title-back-button-text-img"
+                            src="./Images/common/button_back_text.png"
+                            alt=""
+                        />
+                        <!-- <span class="page-before-btn-text">
+                            <h1 data-i18n="back_button_text">뒤로가기</h1>   
+                        </span> -->
+                    </button>
+                </div>
+                <div class="main-title-overlay-center">
+                    <img
+                        class="main-title-center-logo-img"
+                        src="./Images/common/atelier_nodeul_logo_small.png"
+                        alt=""
+                    />
+                </div>
+
+                <div class="main-title-overlay-right">
+                    <img
+                        class="lang-dropdown-icon-img"
+                        src="./Images/common/lang_icon.png"
+                        alt=""
+                    />
+                    <div class="lang-dropdown" id="langDropdown">
+                        <select id="langSelect">
+                            <option value="ko">KOR</option>
+                            <option value="en">ENG</option>
+                        </select>
+                        <!-- <img id="langSelectIcon" src="./Images/common/lang_text_kor.png" alt="selectIcon" width="31" height="13"> -->
+                    </div>
+                </div>
+            </div>  
+            </section>
+    </header>
+    
+    <main>
+        <div class="info-sound">
+            <audio id="info-sound-audio" src="./Sounds/6. (예술_최성록)서울하늘변신구름많음.mp3"
+                    data-src-ko="./Sounds/6. (예술_최성록)서울하늘변신구름많음.mp3"
+                    data-src-en="./Sounds/6. (예술_최성록)서울하늘변신구름많음_영어.mp3"
+                    preload="metadata" autoplay playsinline></audio>
+            <div class="info-sound-audio-player">
+                <div class="gauge-row">
+                    <span id="timeCurrent" class="time-label" aria-live="polite">00:00</span>
+
+                    <div class="gauge-wrap" id="gaugeWrap">
+                        <input id="seekBar" type="range" min="0" value="0" step="0.1">
+                    </div>
+                    
+                    <span id="timeTotal" class="time-label">00:00</span>
+                </div>
+                
+                
+                <button id="backBtn" class="circle-btn" type="button">-10</button>
+                <button id="playBtn" class="circle-btn" type="button">
+                    <img id="playIcon" src="./Images/common/button_next.png" alt="play">
+                </button>
+                <button id="forwardBtn" class="circle-btn" type="button">+10</button>
+            </div>
+        </div>
+        <!-- ================= Art ================= -->
+        <section class="art-container" id="art-container">
+            <div class="container">
+                <div class="art-title">
+                    <!-- <img
+                        class="art-title-text-image"
+                        src="Images/art_1_3/art_1_3_title_text.png"
+                        alt=""
+                    /> -->
+                    <h1 data-i18n="exhibit_name_1">예술</h1>
+                </div>
+
+                <div class="art-image">
+                    <img
+                        class="art-image-img"
+                        src="Images/art_1_3/art_1_3_picture.png"
+                        alt=""
+                    />
+                </div>
+                <!-- <div class="art-link">
+                    <a class="art-link-btn" href="https://www.naver.com/"
+                        style="--bg: url('../Images/common/art_link_button.png'); --accent: #ffffff;"
+                        aria-label="">
+                        
+                        <div class="art-link-btn-text">
+                            <h1 data-i18n="link_button_text">영상 보러가기</h1>
+                        </div>
+                    </a>
+                </div> -->
+                
+                <!-- 작가명, 제목 -->
+                <!-- <div class="artist-introduce">           
+                    <div class="artist-introduce-text">                        
+                        <h1 class="artise_name" data-i18n="artist_name_1">작가</h1>
+                        <h1 class="art_title" data-i18n="art_name_1">제목</h1>                       
+                    </div>
+                </div> -->
+                <div class="art-info">   
+                    <div class="artist-name">
+                        <h1 data-i18n="artist_name_3">작가</h1>
+                    </div>
+                    <div class="art-name">
+                        <!-- <img
+                            class="art-name-text-image"
+                            src="Images/art_1_3/art_1_3_name_text.png"
+                            alt=""
+                        /> -->
+                        <h1 data-i18n="art_list_3">작품명</h1>
+                    </div>
+                </div>
+                <!-- 작품 설명 -->
+                <div class="art-explain-text-bg">
+                    <!-- <img
+                        class="art-explain-text-image"
+                        src="Images/art_1_3/art_1_3_explain_text.png"
+                        alt=""
+                    /> -->
+                    <div class="art-explain">
+                        <h1 data-i18n="art_explain_3">작품설명</h1>
+                    </div>
+                </div>
+                <!--
+                <div class="art-explain">           
+                    <div class="art-explain-text">
+                        <h1 data-i18n="art_explain_1">작품 설명</h1>
+                    </div>
+                </div>
+                -->
+
+                <!-- 타임 라인 -->
+                <div class="art-explain-time-table-bg">
+                    <h1 class="art-explain-time-table-title" data-i18n="time_table_title">전시 순서 안내</h1>
+                    <div class="art-explain-time-table-all">
+                        <div class="art-explain-time-table">
+                            <h1 class="time-table-title_1" data-i18n="time_table_title_1"> </h1>
+                            <h1 class="time-table-title_2" data-i18n="time_table_title_sub_1"> </h1>
+                            <h1 class="time-table-name" data-i18n="time_table_art_1"> </h1>
+                            <h1 class="time-table-time">05:00</h1>
+                        </div>
+                        <div class="art-explain-time-table">
+                            <h1 class="time-table-title_1" > </h1>
+                            <h1 class="time-table-title_2" > </h1>
+                            <h1 class="time-table-name" data-i18n="time_table_art_2"> </h1>
+                            <h1 class="time-table-time">03:00</h1>
+                        </div>
+                        <!-- <div class="art-explain-time-table">
+                            <h1 class="time-table-title_1" > </h1>
+                            <h1 class="time-table-title_2" > </h1>
+                            <h1 class="time-table-name" data-i18n="time_table_art_3"> </h1>
+                            <h1 class="time-table-time">01:30</h1>
+                        </div> -->
+                        <div class="art-explain-time-table">
+                            <h1 class="time-table-title_1" data-i18n="time_table_title_2"> </h1>
+                            <h1 class="time-table-title_2" data-i18n="time_table_title_sub_2"> </h1>
+                            <h1 class="time-table-name" data-i18n="time_table_art_4"> </h1>
+                            <h1 class="time-table-time">01:30</h1>
+                        </div>
+                        <div class="art-explain-time-table">
+                            <h1 class="time-table-title_1" > </h1>
+                            <h1 class="time-table-title_2" > </h1>
+                            <h1 class="time-table-name" data-i18n="time_table_art_5"> </h1>
+                            <h1 class="time-table-time">02:00</h1>
+                        </div>
+                        <div class="art-explain-time-table">
+                            <h1 class="time-table-title_1" data-i18n="time_table_title_3"> </h1>
+                            <h1 class="time-table-title_2" data-i18n="time_table_title_sub_3"> </h1>
+                            <h1 class="time-table-name" data-i18n="time_table_art_6"> </h1>
+                            <h1 class="time-table-time">01:00</h1>
+                        </div>
+                        <div class="art-explain-time-table">
+                            <h1 class="time-table-title_1" data-i18n="time_table_title_1"> </h1>
+                            <h1 class="time-table-title_2" data-i18n="time_table_title_sub_1"> </h1>
+                            <h1 class="time-table-name" data-i18n="time_table_art_7"> </h1>
+                            <h1 class="time-table-time">02:20</h1>
+                        </div>
+                        <div class="art-explain-time-table">
+                            <h1 class="time-table-title_1" > </h1>
+                            <h1 class="time-table-title_2" > </h1>
+                            <h1 class="time-table-name" data-i18n="time_table_art_8"> </h1>
+                            <h1 class="time-table-time">05:30</h1>
+                        </div>
+                        <!-- <div class="art-explain-time-table">
+                            <h1 class="time-table-title_1" > </h1>
+                            <h1 class="time-table-title_2" > </h1>
+                            <h1 class="time-table-name" data-i18n="time_table_art_9"> </h1>
+                            <h1 class="time-table-time">05:30</h1>
+                        </div> -->
+                        <div class="art-explain-time-table">
+                            <h1 class="time-table-title_1" data-i18n="time_table_title_2"> </h1>
+                            <h1 class="time-table-title_2" data-i18n="time_table_title_sub_2"> </h1>
+                            <h1 class="time-table-name" data-i18n="time_table_art_10"> </h1>
+                            <h1 class="time-table-time">01:30</h1>
+                        </div>
+                        <div class="art-explain-time-table">
+                            <h1 class="time-table-title_1" > </h1>
+                            <h1 class="time-table-title_2" > </h1>
+                            <h1 class="time-table-name" data-i18n="time_table_art_11"> </h1>
+                            <h1 class="time-table-time">02:00</h1>
+                        </div>
+                        <div class="art-explain-time-table">
+                            <h1 class="time-table-title_1" data-i18n="time_table_title_3"> </h1>
+                            <h1 class="time-table-title_2" data-i18n="time_table_title_sub_3"> </h1>
+                            <h1 class="time-table-name" data-i18n="time_table_art_12"> </h1>
+                            <h1 class="time-table-time">01:00</h1>
+                        </div>
+                        
+                    </div>
+                    <!-- <img class="art-explain-time-table-img" src="./Images/common/schedule_list2_ko.png" 
+                        data-src-ko="./Images/common/schedule_list2_ko.png"
+                        data-src-en="./Images/common/schedule_list2_en.png"alt=""> -->
+                </div>
+                
+                <!-- 페이지 공통 하단 -->
+                <div class="page-bottom">
+                    <a class="page-top-btn" href="#top" id="goTopBtn"
+                        style="--bg: url('../Images/common/button_top2.png'); --accent: #ffffff;"
+                        aria-label="">
+                        <!--
+                        <span class="page-top-btn-text">
+                            <h1 data-i18n="top_button_text">TOP</h1>
+                        </span>
+                        -->
+                    </a>
+                    <a class="page-index-btn" href="./page_exhibit_intro_2.html"
+                        style="--bg: url('../Images/common/list_text2.png'); --accent: #ffffff;"
+                        aria-label="">
+                        <!--
+                        <span class="page-index-btn-text">
+                            <h1 data-i18n="list_button_text">list</h1>
+                        </span>
+                        -->
+                    </a>
+                </div>
+                <!-- 페이지 공통 하단 고정 -->
+                <div class="page-fixed-bottom">
+                    <div class="page-fixed-bottom-inner">
+                        <a class="page-before-btn" href="./page_art_1_2.html"
+                            style="--bg: url('../Images/common/button_prev2.png'); --accent: #ffffff;"
+                            aria-label="">
+                            <!--
+                            <span class="page-before-btn-text">
+                                <h1 data-i18n="prev_button_text">이전</h1>
+                            </span>
+                            -->
+                        </a>
+                        
+                        <a class="page-after-btn" href="./page_art_1_4.html"
+                            style="--bg: url('../Images/common/button_next2.png'); --accent: #ffffff;"
+                            aria-label="">
+                            <!--
+                            <span class="page-after-btn-text">
+                                <h1 data-i18n="next_button_text">다음</h1>
+                            </span>
+                            -->
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <script src="./js/script.js"></script>
+    <script src="./js/script_page.js"></script>
+    <script src="./js/language_text.js"></script>
+</body>
+</html>

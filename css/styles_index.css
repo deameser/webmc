@@ -1,0 +1,144 @@
+body {
+    margin: 0;
+    background-image: 
+      /* url('../Images/index/index_bg_top_gradient.png'), */
+      url('../Images/index/index_bg_bottom_gradient.png'),
+      /* url(''),
+      url(''), */
+      url('../Images/index/index_bg.jpg'),
+      url('../Images/index/index_bg_black.png');
+    background-repeat: /*no-repeat, */no-repeat, no-repeat, no-repeat;
+    background-size: /*100% 500px,*/ 100% 340px, min(100%, 400px) auto, 100% 100%;
+    /* background-size: 100% 500px, 100% 660px, min(600vw, 400px) auto, cover; */
+    background-position:/* top center, */bottom center, top center, top center;
+    background-color: /*transparent, */transparent, transparent, transparent;
+    padding-bottom: 140px;
+}
+
+.main-title{
+  margin-top: 0px;
+}
+.main-title-img {
+    width: 163px;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    object-position: center;
+    margin: 150px auto 100px;
+}
+/* 인덱스 버튼 */
+.main-index{
+    margin-top: 100px;
+}
+.main-index .container{
+  /* max-width: var(--container-max); */
+  width: min(100%, 360px);
+  margin: 0 auto;
+  /* padding: 0 16px; */
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+.main-index-grid{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0px;
+}
+
+/* 메인 인덱스 버튼 */
+.main-index-btn{
+    position: relative;
+    display: flex;
+    align-items: center;
+    /* gap: 14px; */
+    /* width: 345px; */
+    width: 90%;        /* 컨테이너 가로를 꽉 채우되 */
+    max-width: 345px;   /* 최대 345px까지만 */
+    min-height: 24px;
+    /* height: 43px; */
+    padding: 13px 16px;
+    /*border-radius: 16px;*/
+    text-decoration: none;
+    color: #111;
+
+    /* 배경 이미지/색 */
+    background-image: var(--bg);
+    background-size: contain;
+    background-position: center;
+    background-color: transparent;
+    background-repeat: no-repeat;
+
+    overflow: hidden;
+    isolation: isolate;
+    margin: 0 auto;
+    /* box-shadow: 0 1px 2px rgba(0,0,0,.06);
+    transition: transform .15s ease, box-shadow .15s ease; */
+}
+.main-index-btn + .main-index-btn{
+  margin-top: 3px;
+}
+
+/* 마지막 두 개의 위여백을 0으로 */
+/* .main-index-btn:nth-last-child(2),
+.main-index-btn:last-child{
+  margin-top: -8px;
+} */
+/* 텍스트 */
+.index-btn-text {
+  display: flex;
+  max-width: 90%;
+  gap: 2px;              /* 둘 사이 간격 */
+  align-items: baseline; /* 윗줄 맞추기 */
+  margin-left: -15px;
+}
+.index-btn-text h1{
+  margin: 0;
+  /*
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: #dadada;
+  line-height: 0.4;
+  margin-left: 20px;
+  */
+}
+.index-btn-text h1:first-of-type {
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-weight: 400;
+  font-size: 1.15rem;
+  color: #dadada;
+  line-height: 0.4;
+  margin-left: 30px;
+}
+
+/* 두 번째 h1 (영문 부제) */
+.index-btn-text h1:nth-of-type(2) {
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-weight: 400;
+  font-size: 0.6rem;
+  color: #ffffff;
+  line-height: 0.4;
+  margin-left: 0px;
+}
+
+.index-btn-text-1 {
+  margin-left: 30px;
+}
+
+.index-btn-text-2 {
+  margin-left: 30px;
+}
+
+.index-btn-text-3 {
+  margin-left: 30px;
+}
+
+.index-btn-text-4 {
+  margin-left: 30px;
+}
+
+.index-btn-text-5 {
+  margin-left: 30px;
+}
+
+.index-btn-text-6 {
+  margin-left: 30px;
+}
