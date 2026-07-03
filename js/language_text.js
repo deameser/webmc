@@ -1,9 +1,9 @@
 const translations = {
     ko: {
-        "index_button_introduce" : "아뜰리에 노들 소개",
-        "index_button_schedule" : "전시 시간표",
-        "index_button_exhibit" : "예술 시작의 근원",
-        "index_button_exhibit_sub" : "The Origin of All Beginnings",
+        "index_button_introduce" : "서울로미디어캔버스 소개",
+        "index_button_schedule" : "상영 시간표",
+        "index_button_exhibit" : "전시 소개",
+        "index_button_exhibit_sub" : "",
         "index_button_art_1" : "동행 모먼트서울",
         "index_button_art_1_sub" : "Moment Seoul",
         "index_button_art_2" : "매력 한강네이처",
@@ -31,9 +31,9 @@ const translations = {
         "schedule_name" : "작품명",
         "schedule_time" : "상영 시간",
 
-        "exhibit_intro_title" : "전시 소개",        
-        "exhibit_introduce_name" : "2026 아뜰리에 노들 첫 전시 : 시작의 근원\nAtelier Nodeul 2026 1st Exhibition : The Origin of All Beginnings",
-        "exhibit_introduce" : "토마스 헤더윅의〈소리풍경(Soundscape)〉프로젝트와 함께 개장한 [아뜰리에 노들]의 2026년 첫 번째 전시가 개최됩니다.\n\n이번 전시는 예술, 동행, 매력 세 가지 섹션으로 구성됩니다.\n\n예술 섹션에선 시작의 근원(The Origin of All Beginnings)을 주제로 이돈아, 최성록 두 미디어아티스트가 참여하여 기원과 생성의 순간을 탐구한 작품을 선보입니다. 동행 섹션인 모먼트 서울(Moment Seoul)에서는 시민들에게 새로운 시작을 응원하는 따뜻한 감성메시지와 서울의 상징 해치를 통해 노들의 아름다운 봄을 전합니다. 매력 섹션 한강 네이처(Hangang Nature)는 노들섬의 깃대종*인 맹꽁이를 중심으로 한강의 생태계를 친근하게 풀어내며 노들이 가진 자연의 매력을 소개합니다.\n\n*예술 : 시작의 근원 (The Origin of All Beginnings)\n*동행 : 모먼트 서울 (Moment Seoul)\n*매력 : 한강 네이처 (Hangang Nature)",
+        // "exhibit_intro_title" : "전시 소개",        
+        // "exhibit_introduce_name" : "2026 아뜰리에 노들 첫 전시 : 시작의 근원\nAtelier Nodeul 2026 1st Exhibition : The Origin of All Beginnings",
+        "exhibit_introduce" : "서울로미디어캔버스는 시민이 향유하고 공감할 수 있는\n미디어아트와 영상 콘텐츠 등 전자적 빛으로 이루어진\n예술작품을\n지속 전시하여 미디어아트의 영역을 확장하는 미디어아트\n전문 플랫폼입니다.",
         "exhibit_introduce_sub" : "*특정 지역이나 환경을 대표하면서 사람들의 관심과 보호의식을 이끌어내기 위해 선정된 상징적인 생물종",
         "exhibit_explain_name_1" : "시작의 근원",
         "exhibit_explain_1" : "'시작의 근원 The Origin of All Beginnings'은 한강 노들섬에서 펼쳐지는 미디어아트 전시로, 도시의 빛과 물결이 교차하는 지점에서 기원과 생성의 순간을 탐구합니다.\n이돈아, 최성록 두 미디어아티스트의 다채롭고 역동적인 작품을 통해 노들섬의 예술적 매력과 한강의 새로운 가능성을 재조명합니다.",

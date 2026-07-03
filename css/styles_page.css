@@ -301,7 +301,15 @@ header.nav{
   margin: 0 auto;
 }
 
-
+/* 로고 */
+.main-title-img {
+    width: 163px;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    object-position: center;
+    margin: 20px auto 10px;
+}
 
 /* 하단 버튼 */
 .page-bottom{ 
