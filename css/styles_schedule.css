@@ -51,8 +51,8 @@ body {
     flex-direction: column;
     /*align-items: center;*/
     /* align-items: flex-start; */
-    background-size: min(100%, 344px) 550px;
-    background-image: url('../Images/schedule/schedule_info_bg.png');
+    /* background-size: min(100%, 344px) 550px;
+    background-image: url('../Images/schedule/schedule_info_bg.png'); */
     background-repeat: no-repeat;   /* 반복 안 함 */
     background-position: center;    /* 가운데 정렬 */
     border-radius: 20px;
@@ -82,7 +82,7 @@ body {
 
 .schedule-info-image-img{
     display: block;
-    width: min(100%, 300px);
+    width: min(100%, 400px); /* 300 */
     height: auto;
     /* object-fit: contain; */
     /*justify-content: center;*/

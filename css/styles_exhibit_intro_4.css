@@ -1,0 +1,87 @@
+body {
+    margin: 0;
+    background-image: 
+      url('../Images/exhibit_intro_2/exhibit_intro_2_bg.jpg');
+    background-repeat: no-repeat;
+    background-size: min(600vw, 660px) auto;
+    background-position: top center;
+    background-color: #000000;
+    padding-bottom: 0px;
+}
+.container{
+    position: relative; 
+  margin-top: 60px;
+}
+.exhibit-list-group{
+    position: relative; 
+  margin-top: 40px;
+}
+.exhibit-list-title{
+    position: relative;
+    text-align: center;
+    color: #ffffff;
+    padding: 0px;
+    margin: 0px auto;
+}
+.exhibit-list-title h1
+{
+  font-weight: 400;
+  font-size: 0.94rem;
+}
+.exhibit-list-grid{
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-top: 10px;
+  gap: 10px;
+}
+
+/* 전시 리스트 */
+.exhibit-list{
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 343px;
+    height: 56px;
+    text-decoration: none;
+    color: #111;
+
+    /* 배경 이미지/색 */
+    background-image: url('../Images/exhibit_intro_2/exhibit_intro_2_list_bg.png');
+    background-size: contain;
+    background-position: center, center;
+    background-color: transparent, transparent;
+    background-repeat: no-repeat, no-repeat;
+
+    overflow: hidden;
+    isolation: isolate;
+    margin: 0 auto;
+    /* box-shadow: 0 1px 2px rgba(0,0,0,.06);
+    transition: transform .15s ease, box-shadow .15s ease; */
+}
+.exhibit-btn-icon {
+    width: 46px;
+    height: 46px;
+    margin-left: 35px;
+}
+.exhibit-btn-text {
+    margin-left: 20px;
+}
+
+.exhibit-list-text{
+    position: relative;
+    text-align: left;
+    color: #ffffff;
+    padding: 0px;
+    margin: 0;
+}
+.exhibit-list-text h1
+{
+    font-weight: 600;
+    font-size: 1.1em;
+    margin-left: 20px;
+}
+
+.page-bottom{ 
+    margin-top: 40px;
+    margin-bottom: 15px;
+}

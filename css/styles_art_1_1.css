@@ -1,19 +1,19 @@
 body {
     margin: 0;
     background-image: 
-      url('../Images/art_1_1/art_1_1_bg.jpg');
+      url('../Images/common/bg_1.jpg');
     background-repeat: no-repeat;
     background-size: min(600vw, 660px) auto;
     background-position: top center;
     background-color: #000000;
     padding-bottom: 0px;
 }
-.page_art_1_1{
+/* .page_art_1_1{
     min-height: 100vh;
     display: grid;
     grid-template-rows: 1fr auto;
     margin: 0;
-}
+} */
 .art-container{    
   max-width: var(--container-max);
   width: 100%;

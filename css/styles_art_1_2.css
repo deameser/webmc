@@ -1,19 +1,19 @@
 body {
     margin: 0;
     background-image: 
-      url('../Images/art_1_2/art_1_2_bg.jpg');
+      url('../Images/common/bg_1.jpg');
     background-repeat: no-repeat;
     background-size: min(600vw, 660px) auto;
     background-position: top center;
     background-color: #000000;
     padding-bottom: 0px;
 }
-.page_art_1_2{
+/* .page_art_1_2{
     min-height: 100vh;
     display: grid;
     grid-template-rows: 1fr auto;
     margin: 0;
-}
+} */
 .art-container{    
   max-width: var(--container-max);
   width: 100%;
@@ -24,11 +24,6 @@ body {
 .container{
     position: relative; 
     margin-top: 60px;
-}
-.art-title{ 
-    position: relative; 
-    height: 60px; 
-    padding: 0px;
 }
 .art-title-text-image{
     position: relative; 
@@ -129,11 +124,11 @@ body {
 .art_title {
     font-size: 1.5rem;
 } */
- .art-name{
+ /* .art-name{
     position: relative; 
     padding: 0px;
     margin-top: 50px;
- }
+ } */
 .art-name-text-image{
     position: relative; 
     display: flex;

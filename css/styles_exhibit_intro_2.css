@@ -1,87 +1,321 @@
 body {
     margin: 0;
     background-image: 
-      url('../Images/exhibit_intro_2/exhibit_intro_2_bg.jpg');
+      url('../Images/exhibit_intro_1/exhibit_intro_1_bg.jpg');
     background-repeat: no-repeat;
     background-size: min(600vw, 660px) auto;
     background-position: top center;
     background-color: #000000;
     padding-bottom: 0px;
 }
-.container{
-    position: relative; 
-  margin-top: 60px;
-}
-.exhibit-list-group{
-    position: relative; 
-  margin-top: 40px;
-}
-.exhibit-list-title{
-    position: relative;
-    text-align: center;
-    color: #ffffff;
-    padding: 0px;
-    margin: 0px auto;
-}
-.exhibit-list-title h1
-{
-  font-weight: 400;
-  font-size: 0.94rem;
-}
-.exhibit-list-grid{
-  display: grid;
-  grid-template-columns: 1fr;
-  margin-top: 10px;
-  gap: 10px;
-}
-
-/* 전시 리스트 */
-.exhibit-list{
-    position: relative;
-    display: flex;
-    align-items: center;
-    width: 343px;
-    height: 56px;
-    text-decoration: none;
-    color: #111;
-
-    /* 배경 이미지/색 */
-    background-image: url('../Images/exhibit_intro_2/exhibit_intro_2_list_bg.png');
-    background-size: contain;
-    background-position: center, center;
-    background-color: transparent, transparent;
-    background-repeat: no-repeat, no-repeat;
-
-    overflow: hidden;
-    isolation: isolate;
-    margin: 0 auto;
-    /* box-shadow: 0 1px 2px rgba(0,0,0,.06);
-    transition: transform .15s ease, box-shadow .15s ease; */
-}
-.exhibit-btn-icon {
-    width: 46px;
-    height: 46px;
-    margin-left: 35px;
-}
-.exhibit-btn-text {
-    margin-left: 20px;
-}
-
-.exhibit-list-text{
-    position: relative;
-    text-align: left;
-    color: #ffffff;
-    padding: 0px;
+.page_exhibit{
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: 1fr auto;
     margin: 0;
 }
-.exhibit-list-text h1
-{
+
+.exhibit-title{ 
+    position: relative; 
+    height: 80px; 
+    margin-top: 10px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /*center;*/
+    justify-content: center;
+    gap: 6px;
+    /* 좌우 여백 */
+    width: 344px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* .exhibit-title-text-image{
+    display: flex;
+    width: 62px;
+    height: 23px;
+    margin: 0px auto;
+} */
+.exhibit-title-text{
+    position: relative; 
+    z-index: 1;
+    /* font-size: 0.6rem; */
+
+    /* height: 100%;
+    display: grid; place-items: center; */
+
+    height: auto;
+    display: block;
+    
+    text-align: left; color: #ffffff; padding: 0px;
+}
+.exhibit-title-sub-text{
+    position: relative; 
+    z-index: 1;
+    /* font-size: 0.4rem; */
+    
+    /* height: 100%;
+    display: grid; place-items: center; */
+    
+    height: auto;
+    display: block;
+    
+    text-align: left; color: #ffffff; padding: 0px;
+}
+.exhibit-title-text h1,
+.exhibit-title-sub-text h1 {
+    margin: 0;
+    line-height: 1.2;
+}
+
+.exhibit-title-text h1 {
+    font-size: 0.9rem;
     font-weight: 600;
-    font-size: 1.1em;
-    margin-left: 20px;
+}
+
+.exhibit-title-sub-text h1 {
+    font-size: 0.75rem;
+    font-weight: 400;
+}
+
+.exhibit-title-logo{
+    /* margin-top: 0px; */
+    max-width: 400px;
+    width: 344px;
+    height: 193px;
+    overflow: hidden;     /* 밖으로 삐져나온 부분 가리기 */
+    margin: 10px auto;
+}
+.exhibit-title-slider-track{
+  display: flex;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  cursor: grab;
+}
+.exhibit-title-slider-track::-webkit-scrollbar {
+  display: none;
+}
+.exhibit-title-slider-track.is-grabbing {
+  cursor: grabbing;            /* 드래그 중일 때 커서 모양 */
+}
+.exhibit-title-logo-img{
+    /* width: 344px;
+    height: 146px;
+    display: flex;
+    object-fit: cover;
+    justify-content: center;
+    background-size: contain;
+
+    margin: 0 auto; */
+    
+    flex: 0 0 100%;             /* 한 화면에 한 장만 */
+    scroll-snap-align: start;   /* 스냅 위치 */
+    width: 100%;
+    height: 250px;              /* 필요에 따라 조절 */
+    object-fit: cover;          /* 비율 유지하며 채우기 */
+    display: block;
+}
+@media (min-width: 768px) {
+  .exhibit-title-logo-img {
+    max-width: var(--container-max); 
+    margin: 0 auto;                  /* 가운데 정렬 */
+  }
+}
+
+.exhibit-intro-text-1-bg{
+    position: relative; 
+    width: 344px;
+    height: 315px; 
+    margin: 54px auto;
+    display: flex;
+    flex-direction: column;
+    /*align-items: center;*/
+    /* align-items: flex-start; */
+    background-image: url('../Images/exhibit_intro_1/exhibit_intro_explain_text_1_bg.png');
+    background-repeat: no-repeat;   /* 반복 안 함 */
+    background-position: center;    /* 가운데 정렬 */
+    z-index: 0;
+}
+.exhibit-intro-text-2-bg{
+    position: relative; 
+    width: 344px;
+    height: 568px; 
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+    /*align-items: center;*/
+    /* align-items: flex-start; */
+    background-image: url('../Images/exhibit_intro_1/exhibit_intro_explain_text_2_bg.png');
+    background-repeat: no-repeat;   /* 반복 안 함 */
+    background-position: center;    /* 가운데 정렬 */
+    z-index: 0;
+}
+.exhibit-intro-text-1-image {
+    display: flex;
+    margin-top: 30px;
+    margin-left: 25px;
+    width: 287px;
+    z-index: 2;
+}
+
+.exhibit-intro-text-2-image {
+    display: flex;
+    margin-top: 50px;
+    margin-left: 30px;
+    width: 287px;
+    z-index: 2;
+}
+
+/* 전시 소개 */
+.exhibit-introduce{ 
+    position: relative; 
+    width: 344px;
+    /* height: 315px;  */
+    margin: 4px auto;
+    
+    padding: 0px 10px 0px; 
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    /*align-items: center;*/
+    /* align-items: flex-start; */
+    border-style: solid;
+    border-width: 16px;  
+    border-image-source: url('../Images/exhibit_intro_1/exhibit_intro_explain_text_1_bg.png');
+    border-image-slice : 100 fill;
+    border-image-repeat: stretch;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 100% 100%;
+    z-index: 0;
+}
+.exhibit-introduce-name-text{
+    position: static;
+    display: block;
+    text-align: left;
+    color: #ffffff;      
+    z-index: 2;
+
+    max-width: min(100%, var(--container-max, 660px));
+    /* margin: 0 auto; */
+}
+.exhibit-introduce-name-text h1 {
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-weight: 600;
+  font-size: 0.84rem;
+  /* margin-top: 30px;
+  margin-left: 20px; */
+}
+.exhibit-introduce-text{
+    position: static;
+    display: block;
+    text-align: left;
+    color: #ffffff;      
+    z-index: 2;
+
+    max-width: min(100%, var(--container-max, 660px));
+    /* margin: 0 auto; */
+}
+.exhibit-introduce-text h1 {
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-weight: 400;
+  font-size: 0.72rem;
+  /* margin-top: 10px;
+  margin-left: 20px; */
+}
+.exhibit-introduce-sub-text{
+    position: static;
+    display: block;
+    text-align: left;
+    color: #ffffff;      
+    z-index: 2;
+
+    max-width: min(100%, var(--container-max, 660px));
+    /* margin: 0 auto; */
+}
+.exhibit-introduce-sub-text h1 {
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-weight: 600;
+  font-size: 0.54rem;
+  /* margin-top: 30px;
+  margin-left: 20px; */
+}
+
+/* 전시 설명 */
+.exhibit-explain{ 
+    position: relative; 
+    width: 344px;
+    /* height: 568px;  */
+    margin: 10px auto;
+    display: flex;
+
+    padding: 0px 20px 0px; 
+    box-sizing: border-box;
+
+    flex-direction: column;
+    /*align-items: center;*/
+    /* align-items: flex-start; */
+    /* background-image: url('../Images/exhibit_intro_1/exhibit_intro_explain_text_2_bg.png');
+    background-repeat: no-repeat; 
+    background-position: center; 
+    background-size: contain; */
+    border-style: solid;
+    border-width: 16px;  
+    border-image-source: url('../Images/exhibit_intro_1/exhibit_intro_explain_text_2_bg.png');
+    border-image-slice : 100 fill;
+    border-image-repeat: stretch;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 100% 100%;
+    z-index: 0;
+}
+.exhibit-explain-img{
+    display: block;
+    width: min(100%, var(--container-max, 660px));
+    height: 500px;
+    margin: 0 auto;
+}
+.exhibit-explain-name-text{
+    position: static;
+    display: block;
+    text-align: left;
+    color: #ffffff;      
+    z-index: 2;
+
+    max-width: min(100%, var(--container-max, 660px));
+    /* margin: 0 auto; */
+}
+.exhibit-explain-name-text h1 {
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-weight: 600;   /* 100~300 중에 하나 */
+  font-size: 0.80rem;
+  margin-top: 30px;
+  /* margin-left: 20px; */
+}
+.exhibit-explain-text{
+    position: static;
+    display: block;
+    text-align: left;
+    color: #ffffff;      
+    z-index: 2;
+
+    max-width: min(100%, var(--container-max, 660px));
+    /* margin-left: 20px; */
+}
+.exhibit-explain-text h1 {
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-weight: 400;
+  font-size: 0.66rem;
+  margin-top: -5px;
+  /* margin-left: 20px; */
+  line-height: 1.4;
 }
 
 .page-bottom{ 
-    margin-top: 40px;
+    margin-top: 20px;
     margin-bottom: 15px;
 }
