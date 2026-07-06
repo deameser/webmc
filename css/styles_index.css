@@ -7,9 +7,10 @@ body {
       url('../Images/index/index_bg.jpg');
       /*url('../Images/index/index_bg_black.png'); */
     background-repeat: no-repeat;
-    background-size: 800px auto;
+    background-size: 1000px auto;
     /* background-position: top center; */
-    background-position: center 380px;
+    /* background-position: calc(50% + -100px) 300px; */
+    background-position: center 300px;
     padding-bottom: 140px;
     min-height: 100vh;
 }
@@ -18,7 +19,7 @@ body {
   margin-top: 0px;
 }
 .main-title-img {
-    width: 163px;
+    width: 263px;
     height: auto;
     display: block;
     object-fit: cover;

@@ -27,7 +27,7 @@
 
     width: 100%;
     max-width: min(100%, var(--container-max, 660px));
-    margin-top: 60px;
+    margin-top: 0px;
 }
 .artist-name h1 {
     font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;

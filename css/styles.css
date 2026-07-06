@@ -131,8 +131,8 @@ body {
 .main-title-center-logo-img {
   display: block;
   /*max-width: 120px;*/
-  width: 63px;
-  height: 15px;
+  width: 123px;
+  height: 100%;
 
   background-color: transparent;
   box-shadow: 0 12px 32px rgba(0,0,0,0.2);

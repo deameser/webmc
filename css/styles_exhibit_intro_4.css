@@ -1,7 +1,7 @@
 body {
     margin: 0;
     background-image: 
-      url('../Images/exhibit_intro_2/exhibit_intro_2_bg.jpg');
+      url('../Images/common/bg_2.jpg');
     background-repeat: no-repeat;
     background-size: min(600vw, 660px) auto;
     background-position: top center;
@@ -19,14 +19,16 @@ body {
 .exhibit-list-title{
     position: relative;
     text-align: center;
+    width: 344px;
     color: #ffffff;
     padding: 0px;
     margin: 0px auto;
 }
 .exhibit-list-title h1
 {
-  font-weight: 400;
-  font-size: 0.94rem;
+  font-weight: 600;
+  font-size: 1.0rem;
+    text-align: left;
 }
 .exhibit-list-grid{
   display: grid;
@@ -38,19 +40,26 @@ body {
 /* 전시 리스트 */
 .exhibit-list{
     position: relative;
-    display: flex;
+    display: grid; /*flex;*/
+
+    /* 이미지 / 작가명 / 작품명 */
+    grid-template-columns: 46px 82px 1fr;
+    column-gap: 12px;
     align-items: center;
+    
     width: 343px;
-    height: 56px;
+    min-height: 56px;
+    height: auto;
     text-decoration: none;
     color: #111;
 
     /* 배경 이미지/색 */
     background-image: url('../Images/exhibit_intro_2/exhibit_intro_2_list_bg.png');
-    background-size: contain;
-    background-position: center, center;
-    background-color: transparent, transparent;
-    background-repeat: no-repeat, no-repeat;
+    /* background-size: contain; */
+    background-size: 100% 100%;
+    background-position: center; /*, center;*/
+    background-color: transparent /*, transparent*/;
+    background-repeat: no-repeat /*, no-repeat*/;
 
     overflow: hidden;
     isolation: isolate;
@@ -61,12 +70,16 @@ body {
 .exhibit-btn-icon {
     width: 46px;
     height: 46px;
-    margin-left: 35px;
+    margin-left: 0;
+    object-fit: contain;
+
+    transform: translateX(6px);
 }
 .exhibit-btn-text {
     margin-left: 20px;
 }
 
+.exhibit-list-artist,
 .exhibit-list-text{
     position: relative;
     text-align: left;
@@ -74,11 +87,37 @@ body {
     padding: 0px;
     margin: 0;
 }
+
+.exhibit-list-artist {
+    /* 작가명을 왼쪽으로 */
+    transform: translateX(-4px);
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+.exhibit-list-text {
+    /* 작품명을 왼쪽으로 */
+    transform: translateX(-28px);
+}
+
+.exhibit-list-artist h1,
 .exhibit-list-text h1
 {
+    margin: 0;
+    line-height: 1.25;
+    
     font-weight: 600;
     font-size: 1.1em;
     margin-left: 20px;
+}
+
+.exhibit-list-artist h1 {
+    font-weight: 400;
+    font-size: 0.72rem;
+}
+.exhibit-list-text h1 {
+    font-weight: 600;
+    font-size: 0.82rem;
 }
 
 .page-bottom{ 

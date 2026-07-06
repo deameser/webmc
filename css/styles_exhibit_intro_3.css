@@ -1,7 +1,7 @@
 body {
     margin: 0;
     background-image: 
-      url('../Images/exhibit_intro_2/exhibit_intro_2_bg.jpg');
+      url('../Images/common/bg_1.jpg');
     background-repeat: no-repeat;
     background-size: min(600vw, 660px) auto;
     background-position: top center;
@@ -97,7 +97,7 @@ body {
 
 .exhibit-list-text {
     /* 작품명을 왼쪽으로 */
-    transform: translateX(-38px);
+    transform: translateX(-28px);
 }
 
 .exhibit-list-artist h1,
