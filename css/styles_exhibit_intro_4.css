@@ -43,7 +43,7 @@ body {
     display: grid; /*flex;*/
 
     /* 이미지 / 작가명 / 작품명 */
-    grid-template-columns: 46px 82px 1fr;
+    grid-template-columns: 46px 100px 1fr;
     column-gap: 12px;
     align-items: center;
     
@@ -90,14 +90,15 @@ body {
 
 .exhibit-list-artist {
     /* 작가명을 왼쪽으로 */
-    transform: translateX(-4px);
+    transform: translateX(-14px);
     padding-top: 3px;
     padding-bottom: 3px;
+    text-align: center;
 }
 
 .exhibit-list-text {
     /* 작품명을 왼쪽으로 */
-    transform: translateX(-28px);
+    transform: translateX(-38px);
 }
 
 .exhibit-list-artist h1,
@@ -113,7 +114,7 @@ body {
 
 .exhibit-list-artist h1 {
     font-weight: 400;
-    font-size: 0.72rem;
+    font-size: 0.68rem;
 }
 .exhibit-list-text h1 {
     font-weight: 600;
