@@ -1,19 +1,64 @@
 body {
     margin: 0;
     background-color: #000;
-    /* background-color: transparent; */
 
     background-image: 
-      url('../Images/index/index_bg.jpg');
-      /*url('../Images/index/index_bg_black.png'); */
+      url('../Images/index/index_bg.png');
+      
     background-repeat: no-repeat;
-    background-size: 1000px auto;
-    /* background-position: top center; */
-    /* background-position: calc(50% + -100px) 300px; */
-    background-position: center 300px;
+    background-size: min(100%, 400px) auto;
+    background-position: top center;
+    
+    background-color: transparent, transparent, transparent;
     padding-bottom: 140px;
     min-height: 100vh;
 }
+
+/* body {
+    margin: 0;
+    background-color: #000;
+    min-height: 100vh;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+
+    background-image: 
+      url('../Images/index/index_bg.png');
+
+    background-repeat: no-repeat;
+    background-size: min(100%, 400px) auto;
+    background-position: top center;
+
+    z-index: 0;
+    pointer-events: none;
+}
+
+body::after {
+    content: "";
+    position: fixed;
+    inset: 0;
+
+    background-image:
+      url('../Images/index/index_bg_gradient_1.png'),
+      url('../Images/index/index_bg_gradient_2.png');
+    background-repeat: no-repeat, no-repeat;
+    background-size: min(100%, 400px) auto, min(100%, 400px) auto;
+    background-position: top center, top center;
+
+    opacity: 0.1;
+    z-index: 1;
+    pointer-events: none;
+}
+
+main {
+    position: relative;
+    z-index: 2;
+    padding-bottom: 140px;
+    min-height: 100vh;
+} */
 
 .main-title{
   margin-top: 0px;

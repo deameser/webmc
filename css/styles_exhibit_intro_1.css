@@ -15,6 +15,12 @@ body {
     margin: 0;
 }
 
+.main-title-img{
+    width: 250px;
+    height: auto; 
+    margin-top: 30px;
+}
+
 .exhibit-title{ 
     position: relative; 
     height: 80px; 
@@ -39,9 +45,9 @@ body {
     margin-top: 200px;
     max-width: 400px;
     width: 344px;
-    height: 193px;
+    height: 267px;
     overflow: hidden;     /* 밖으로 삐져나온 부분 가리기 */
-  margin: 0 auto;
+    margin: 30px auto;
 }
 .exhibit-title-slider-track{
   display: flex;
@@ -131,9 +137,9 @@ body {
     position: relative; 
     width: 344px;
     /* height: 315px;  */
-    margin: 54px auto;
+    margin: 0px auto;
     
-    padding: 5px 10px 5px; 
+    padding: 0px 10px 0px; 
     box-sizing: border-box;
 
     display: flex;

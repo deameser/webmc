@@ -174,7 +174,7 @@ body {
     position: relative; 
     width: 344px;
     /* height: 315px;  */
-    margin: 4px auto;
+    margin: 24px auto 15px;
     
     padding: 0px 10px 0px; 
     box-sizing: border-box;
@@ -253,7 +253,7 @@ body {
     margin: 10px auto;
     display: flex;
 
-    padding: 0px 20px 0px; 
+    padding: 0px 10px 0px; 
     box-sizing: border-box;
 
     flex-direction: column;

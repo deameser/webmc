@@ -39,8 +39,8 @@ body {
     margin: 25px auto;
 }
 .art-image-img{
-    width: 100%;
-    /* width: 276px; */
+    /* width: 100%; */
+    width: 276px;
     height: auto;
     display: flex;
     object-fit: cover;
