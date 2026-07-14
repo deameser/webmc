@@ -1,7 +1,7 @@
 body {
     margin: 0;
     background-image: 
-      url('../Images/common/bg_2.jpg');
+      url('../Images/common/bg_2.png');
     background-repeat: no-repeat;
     background-size: min(600vw, 660px) auto;
     background-position: top center;
@@ -54,7 +54,7 @@ body {
     color: #111;
 
     /* 배경 이미지/색 */
-    background-image: url('../Images/exhibit_intro_2/exhibit_intro_2_list_bg.png');
+    background-image: url('../Images/common/exhibit_intro_list_bg.png');
     /* background-size: contain; */
     background-size: 100% 100%;
     background-position: center; /*, center;*/

@@ -23,7 +23,7 @@
     position: relative;
     /* display: block; */
     text-align: center;
-    color: #0000ff;      
+    color: #ffffff;      
     z-index: 2;
 
     width: 100%;
@@ -38,7 +38,7 @@
 }
  .art-name{
     position: relative; 
-    color: #0000ff;      
+    color: #ffffff;      
     padding: 0px;
     margin-top: -15px;
  }
@@ -67,7 +67,7 @@
 
     border-style: solid;
     border-width: 16px;  
-    border-image-source: url('../Images/art_1_1/art_1_1_explain_bg.png');
+    border-image-source: url('../Images/common/text_box.png');
     border-image-slice : 100 fill;
     border-image-repeat: stretch;
     background-repeat: no-repeat;
