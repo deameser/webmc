@@ -186,7 +186,7 @@ body {
     border-style: solid;
     border-width: 16px;  
     border-image-source: url('../Images/common/text_box.png');
-    border-image-slice : 100 fill;
+    border-image-slice : 48 fill;
     border-image-repeat: stretch;
     background-repeat: no-repeat;
     background-position: center top;
@@ -307,7 +307,7 @@ body {
     border-style: solid;
     border-width: 16px;  
     border-image-source: url('../Images/common/text_box.png');
-    border-image-slice : 100 fill;
+    border-image-slice : 48 fill;
     border-image-repeat: stretch;
     background-repeat: no-repeat;
     background-position: center top;
