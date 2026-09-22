@@ -41,6 +41,7 @@ body {
 .art-image-img{
     width: 345px;
     height: auto;
+    border-radius: 33px;
     display: flex;
     object-fit: cover;
     justify-content: center; /* 수평 가운데 */

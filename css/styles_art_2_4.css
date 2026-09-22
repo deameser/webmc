@@ -1,7 +1,7 @@
 body {
     margin: 0;
     background-image: 
-      url('../Images/common/bg_2.png');
+      url('../Images/common/bg_1.png');
     background-repeat: no-repeat;
     background-size: min(600vw, 660px) auto;
     background-position: top center;
@@ -22,7 +22,7 @@ body {
 .art-title-text-image{
     position: relative; 
     display: flex;
-    width: 144px;
+    width: 110px;
     margin: 30px auto;
 }
 .art-title-text{
@@ -41,6 +41,7 @@ body {
 .art-image-img{
     width: 345px;
     height: auto;
+    border-radius: 33px;
     display: flex;
     object-fit: cover;
     justify-content: center; /* 수평 가운데 */
@@ -93,63 +94,13 @@ body {
   margin-top: 0px;
 }
 
-/* 작가명, 제목 */
-/* .artist-introduce{ 
-    position: relative; 
-    padding: 0px;
-    margin-top: 50px;
-}
-.artist-introduce-text{
-    position: relative;
-    inset: 0;
-    display: grid;
-    place-items: center;
-    text-align: center;
-    color: #000000;   
-    z-index: 2;       
-    margin: 0 auto;
-}
-.artist-introduce-text h1{
-    margin: 0 auto;
-    color: #fff;
-}
-.artise_name {
-    font-size: 1.0rem;
-}
-.art_title {
-    font-size: 1.5rem;
-} */
- .art-name{
-    position: relative; 
-    padding: 0px;
-    margin-top: 50px;
- }
 .art-name-text-image{
     position: relative; 
     display: flex;
-    width: 144px;
+    width: 70px;
     margin: 30px auto;
 }
 /* 작품 설명 */
-
-/* .art-explain{ 
-    position: relative; 
-    padding: 30px;
-} */
-
-/* .art-explain-text-bg{
-    position: relative; 
-    width: 345px;
-    height: 80px; 
-    margin: -15px auto;
-    display: flex;
-    flex-direction: column;
-    background-image: url('../Images/art_3_1/art_3_1_explain_bg.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 345px 80px;
-    z-index: 0;
-} */
 
 .art-explain-text-image {
     display: flex;
@@ -161,26 +112,7 @@ body {
 .art-explain{
     margin-top: -20px;
 }
-/* .art-explain-img{
-    display: block;
-    width: min(100%, var(--container-max, 660px));
-    height: 500px;
-    margin: 0 auto;
-}
-.art-explain-text{
-    position: static;
-    display: block;
-    text-align: left;
-    color: #fff;          
-    z-index: 2;     
-    
-    max-width: min(100%, var(--container-max, 660px));
-    margin: 0 auto;  
-}
-.art-explain-text h1{
-    font-size: 1.0rem;
-    font-weight: 300;
-} */
+
 .page-bottom{ 
     margin-top: 180px;
     margin-bottom: 15px;
