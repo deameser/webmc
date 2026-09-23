@@ -3,7 +3,7 @@ body {
     background-image: 
       url('../Images/common/bg_1.png');
     background-repeat: no-repeat;
-    background-size: min(600vw, 660px) 1600px;
+    background-size: min(600vw, 660px) 2000px;
     background-position: top center;
     background-color: #000000;
     padding-bottom: 0px;
@@ -354,6 +354,23 @@ body {
   margin-top: 5px;
   /* margin-left: 20px; */
   line-height: 1.4;
+}
+
+.schedule-info-image{
+  width: 100%;
+  max-width: 660px; 
+  margin: 50px auto;
+}
+
+.schedule-info-image-img{
+    display: block;
+    width: min(100%, 400px); /* 300 */
+    height: auto;
+    /* object-fit: contain; */
+    /*justify-content: center;*/
+    margin: 0 auto;
+    margin-bottom: 30px;
+    /* transform: translate(-50px); */
 }
 
 .page-bottom{ 
